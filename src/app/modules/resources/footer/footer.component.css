@@ -1,0 +1,59 @@
+.footer-section .footer-top {
+    background: #f4f4f4;
+    border-top: 15px solid #ec1f78;
+}
+
+.footer-section .footer-top .widget h5 {
+    color: #000;
+    margin-bottom: 30px;
+  }
+  .footer-section .footer-top .widget .logo {
+    display: block;
+    overflow: hidden;
+    color: #000;
+    float: none;
+    margin-bottom: 15px;
+  }
+  .footer-section .footer-top .widget p {
+    overflow: hidden;
+    color: #000;
+  }
+  .footer-section .footer-top .widget .contact-info {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .footer-section .footer-top .widget .contact-info li {
+    line-height: 30px;
+    color: #000;
+  }
+  .footer-section .footer-top .widget .contact-info li i {
+    margin-right: 10px;
+  }
+  .footer-section .footer-bottom {
+    text-align: center;
+  }
+  .footer-section .footer-bottom p {
+    background: whitesmoke;
+    color: #000;
+    margin-bottom: 0;
+    padding: 30px 0;
+  }
+  .footer-section .footer-bottom p a {
+    font-weight: 600;
+    color: #000;
+    padding: 0 5px;
+  }
+
+  .small-post-list .post-item .post-content a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    display: block;
+    margin-bottom: 7px;
+  }
+  .small-post-list .post-item .post-content .post-meta li {
+    font-size: 13px;
+    color: #000;
+  }
+  

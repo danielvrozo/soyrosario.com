@@ -1,0 +1,20 @@
+.post-thumb img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.title, 
+.title p, 
+::ng-deep .title a h6 {
+    font-size: 17px!important;
+    text-align: left!important;
+}
+
+.title {
+    height: 50px;
+}
+
+.heigth-info-noticia{
+    height: 160px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,20 @@
+<div class="modal-body p-0" >
+    <div class="content-modal-theme">
+        <div class="container-fluid px-0" id="">
+            <div id="modalBody">
+                <button class=" btn-home-hover position-absolute close-modal fw-bold text-white" (click)="modal.dismiss('Cancel click')">
+                    <i class="bi bi-x-lg fw-bold"></i>
+                </button>
+                <div id="info-noticia">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="w-100 p-2" id="modal-otp-help" *ngIf="data.video">
+                                <iframe width="100%" height="400" [src]="video_SafeResourceUrl" title="Juanes - Para Tu Amor (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

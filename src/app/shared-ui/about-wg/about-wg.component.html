@@ -1,0 +1,55 @@
+<section class="about-section section-bg-color home-1 ">
+    <div class="about-section-content">
+        <div class="container">
+            <div class="row justify-content-center flex-row-reverse align-items-center">
+                <div class="col-xl-5">
+                    <div class="about-politican" *ngIf="show_me">
+                        <div class="about-bio d-flex flex-wrap justify-content-center align-content-center">
+                            <div class="politician-thumb col-md-4">
+                                <img src="assets/images/desings/soyrosario.jpg" alt="thumb">
+                            </div>
+                            <div class="politician-content text-center text-sm-left col-md-7">
+                                <h4 class="name">Maria Rosario Sanabria Dueñas</h4>
+                                <p class="designation">Puerto Gaitán</p>
+                                <app-social-media></app-social-media>
+                            </div>
+                        </div>
+                        <div class="about-qoute">
+                            <h5><i>{{ me_short[0]['titulo'] }}</i></h5>
+                            <p [innerHTML]="me_short[0]['descripcion'] | decodeHtml"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="about-media row no-gutters" *ngIf="show">
+                        <div class="col-md-12">
+                            <div class="media-thumb" >
+                                
+                                <img src="https://soyrosario.com.co/soyrosario/uploads/{{ videos[0]['imagen_url'] }}" alt="media" class="img-video-1">
+                                <a class="play cursor-pointer" (click)="open_video_modal(videos[0]['url_video'])"><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-thumb">
+                                <img src="https://soyrosario.com.co/soyrosario/uploads/{{ videos[1]['imagen_url']}}" alt="media" class="img-video-2">
+                                <a class="play cursor-pointer" (click)="open_video_modal(videos[1]['url_video'])"><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-thumb">
+                                <img src="https://soyrosario.com.co/soyrosario/uploads/{{ videos[2]['imagen_url']}}" alt="media" class="img-video-2">
+                                <a class="play cursor-pointer" (click)="open_video_modal(videos[2]['url_video'])"><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="media-thumb">
+                                <img src="https://soyrosario.com.co/soyrosario/uploads/{{ videos[3]['imagen_url']}}" alt="media" class="img-video-2">
+                                <a class="play cursor-pointer" (click)="open_video_modal(videos[3]['url_video'])"><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

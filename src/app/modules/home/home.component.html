@@ -1,0 +1,32 @@
+
+<app-header></app-header>
+<section class="banner banner-1 position-relative" style='background-image: url({{image_bg}}), linear-gradient(180deg, rgb(67 255 255 / 0%) 0%, rgb(67 255 255 / 20%) 55%, rgb(67 255 255 / 54%) 100%);'>
+    <div class="banner-content">
+        <div class="container">
+            <div class="banner-content-text px-3 px-md-0" *ngIf="show">
+                <h1 class="text-capitalize" >{{body[0]['titulo']}}</h1>
+                <h6 class=""  [innerHTML]="body[0]['descripcion'] | decodeHtml"></h6>
+                <a [routerLink]="['/quien-soy']" class="custom-btn">¿Quién Soy? ¡Conóceme!</a>
+            </div>   
+            
+        </div>    
+    </div>
+
+    <div class="d-block d-md-none img-mobile">
+        <img src="{{image_bg_responsive}}" alt="" class="d-block d-md-none">
+    </div>
+
+</section>
+
+<app-about-wg></app-about-wg>
+
+<!-- Return app prgb -->
+<app-programs-gobierno *ngIf="apps"></app-programs-gobierno>
+
+<app-time-company *ngIf="apps"></app-time-company>
+
+<app-noticias-destacadas></app-noticias-destacadas>
+
+<app-frames-redes></app-frames-redes>
+
+<app-footer></app-footer>

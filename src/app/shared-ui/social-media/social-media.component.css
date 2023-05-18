@@ -1,0 +1,36 @@
+.social-media {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .social-media li a {
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  .social-media li a.instagram {
+    background-color: #C13584;
+  }
+  .social-media li a.tiktok {
+    background-color: black;
+  }
+  .social-media li a.facebook {
+    background-color: #3b5998;
+  }
+  .social-media li a.twitter {
+    background-color: #55acee;
+  }
+  .social-media li a.linkedin {
+    background-color: #007bb5;
+  }

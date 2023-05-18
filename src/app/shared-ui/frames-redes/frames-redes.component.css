@@ -1,0 +1,12 @@
+/* @media (max-width: 770px) {
+    .post-item .fb-page,
+    .post-item iframe,
+    .post-item a{
+
+    }
+} */
+
+.twitter-timeline {
+    height: 500px;
+    width: 100%;
+  }

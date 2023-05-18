@@ -1,0 +1,36 @@
+.election-campaign-section {
+    background-image: url(../../../assets/images/desings/banner-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-overlay {
+    background-color: rgb(67 255 255 / 51%);
+  }
+
+  .countdown .countdown-item {
+    background: #ec1f7878;
+}
+
+.countdown .countdown-item:first-child {
+  background-color: #ec1f7878;
+}
+
+.countdown .countdown-item:nth-child(2) {
+  background-color: #ec1f7878;
+}
+
+.countdown .countdown-item:nth-child(3) {
+  background-color: #ec1f7878;
+}
+
+.countdown .countdown-item:last-child {
+  background-color: #ec1f7878;
+}
+
+@media (max-width: 770px) {
+  .election-campaign-section {
+    background-position-x: -1430px;
+  }
+}
