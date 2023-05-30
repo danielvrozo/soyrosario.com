@@ -42,6 +42,18 @@ import { NoticiasUpdateComponent } from './modules/admin/noticias-admin/crud/not
 import { NoticiasDeleteComponent } from './modules/admin/noticias-admin/crud/noticias-delete/noticias-delete.component';
 import { CrudMeComponent } from './modules/admin/home-admin/crud-me/crud-me.component';
 import { CrudEditarComponent } from './modules/admin/home-admin/crud-editar/crud-editar.component';
+import { RedesAdminComponent } from './modules/admin/redes-admin/redes-admin.component';
+import { RedesCreateComponent } from './modules/admin/redes-admin/crud/redes-create/redes-create.component';
+import { RedesUpdateComponent } from './modules/admin/redes-admin/crud/redes-update/redes-update.component';
+import { RedesDeleteComponent } from './modules/admin/redes-admin/crud/redes-delete/redes-delete.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { ContactoAdminComponent } from './modules/admin/contacto-admin/contacto-admin.component';
+import { GaleriaAdminComponent } from './modules/admin/galeria-admin/galeria-admin.component';
+import { GaleriaCreateComponent } from './modules/admin/galeria-admin/crud/galeria-create/galeria-create.component';
+import { GaleriaDeleteComponent } from './modules/admin/galeria-admin/crud/galeria-delete/galeria-delete.component';
+import { GaleriaUpdateComponent } from './modules/admin/galeria-admin/crud/galeria-update/galeria-update.component';
+import { GaleriaGetComponent } from './modules/galeria-get/galeria-get.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -76,7 +88,18 @@ import { CrudEditarComponent } from './modules/admin/home-admin/crud-editar/crud
     NoticiasUpdateComponent,
     NoticiasDeleteComponent,
     CrudMeComponent,
-    CrudEditarComponent
+    CrudEditarComponent,
+    RedesAdminComponent,
+    RedesCreateComponent,
+    RedesUpdateComponent,
+    RedesDeleteComponent,
+    ContactComponent,
+    ContactoAdminComponent,
+    GaleriaAdminComponent,
+    GaleriaCreateComponent,
+    GaleriaDeleteComponent,
+    GaleriaUpdateComponent,
+    GaleriaGetComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +108,8 @@ import { CrudEditarComponent } from './modules/admin/home-admin/crud-editar/crud
     HttpClientModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [FechaLetras, { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }],
   bootstrap: [AppComponent]

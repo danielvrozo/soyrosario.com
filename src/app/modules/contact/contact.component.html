@@ -1,0 +1,96 @@
+<app-header></app-header>
+<!-- start page header -->
+<section class="page-header">
+    <div class="overlay">
+        <div class="container">
+            <div class="page-header-content">
+                <h2 class="text-black">Contáctenos</h2>
+                <ul class="breadcrumb align-items-center">
+                    <li><a [routerLink]="['/']" class="text-black">Inicio</a></li>
+                    <li><a [routerLink]="['/contactenos']" class="text-black">Contáctenos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end page header -->
+
+
+<!-- contact section start here -->
+<section class="contact-section section-bg-color">
+    <div class="section-padding-140">
+        <div class="container">
+            <div class="contact-area">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="contact-info">
+                            <h3>Información</h3>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <div class="contact-info-item">
+                                        <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                        <span class="text">Tv. 9 #11-21 a 11-1, Puerto Gaitán - Meta</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-info-item">
+                                        <span class="icon"><i class="fa fa-phone"></i></span>
+                                        <span class="text">+57 3105712458</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-info-item">
+                                        <span class="icon"><i class="fa fa-envelope"></i></span>
+                                        <span class="text">comunicaciones@soyrosario.com</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-info-item">
+                                        <span class="icon"><i class="fa fa-envelope"></i></span>
+                                        <span class="text">soyrosario.com.co</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" style="opacity: {{ opacity }};" >
+                        <div class="ccr-section">
+                            <h3 class="section-title">Déjanos un comentario</h3>
+                            <div class="comment-response">
+                                <form (ngSubmit)="Save(form)" #form="ngForm" >
+                                    <input type="text" class="name" name="nombre" placeholder="Tu nombre" id="nombre" [(ngModel)]="nombre" required>
+                                    <input type="text" class="email" name="correo" placeholder="Correo electrónico" id="correo" [(ngModel)]="correo" required>
+                                    <input type="text" class="phone" name="celular" placeholder="Tu # de celuar" id="celular" [(ngModel)]="celular" required>
+                                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje" id="mensaje" [(ngModel)]="mensaje" required></textarea>
+                                    <div class="alert alert-danger mt-4" role="alert" *ngIf="error">
+                                        Debes llenar todos los campos.
+                                    </div>
+                                    <div class="alert alert-success mt-4" role="alert" *ngIf="code">
+                                        Tu comentario se ha enviado con exito
+                                    </div>
+                                    <input type="submit" value="Enviar comentario">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section ending here -->
+
+
+
+<!-- map section start here -->
+<div class="map-area map2">
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7957.039202589304!2d-72.08872335157156!3d4.3129876811185115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e1484f0324effd3%3A0x270cfee26847bd10!2sPuerto%20Gait%C3%A1n%2C%20Meta!5e0!3m2!1ses!2sco!4v1684607246787!5m2!1ses!2sco" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+<!-- map section ending here -->
+
+
+<app-frames-redes></app-frames-redes>
+
+<app-footer></app-footer>

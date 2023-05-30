@@ -29,12 +29,9 @@
                             </a>
                         </div>
                         <div class="post-content">
-                            <h6 class="title"><a [routerLink]="['/noticias/noticia/' + item.id]" [innerHTML]="item.titulo  | decodeHtml">  </a></h6>
-                            <ul class="post-meta">
-                                <li>{{ getFechaLetas(item.fecha) }}</li>
-                            </ul>
+                            <h6 class="title"><a [routerLink]="['/noticias/noticia/' + item.id]" [innerHTML]="item.titulo  | decodeHtml">  </a></h6>                   
                             <p class="heigth-info-noticia" [innerHTML]="(item.descripcion | slice:0:300) + (item.descripcion.length > 300 ? '...' : '' | decodeHtml)"></p>
-                            <a [routerLink]="['/noticias/noticia/' + item.id]" class="custom-btn custom-btn-sm pull-left">Ver gobierno</a>
+                            <a [routerLink]="['/noticias/noticia/' + item.id]" class="custom-btn custom-btn-sm pull-left">Ver noticia</a>
                         </div>
                     </div>
                 </div>

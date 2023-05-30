@@ -14,9 +14,6 @@
                     </div>
                     <div class="post-content">
                         <h6 class="title"><a [routerLink]="['/noticias/noticia/' + item.id]" [innerHTML]="item.titulo | decodeHtml"> </a></h6>
-                        <ul class="post-meta">
-                            <li>{{ getFechaLetas(item.fecha) }}</li>
-                        </ul>
                         <p class="heigth-info-noticia" [innerHTML]="(item.descripcion | slice:0:320) + (item.descripcion.length > 320 ? '...' : '' | decodeHtml)"></p>
                         <a [routerLink]="['/noticias/noticia/' + item.id]" class="custom-btn custom-btn-sm pull-left">Ver noticia</a>
                     </div>

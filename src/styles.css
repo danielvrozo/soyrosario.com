@@ -201,6 +201,11 @@ textarea:focus {
   color: #b0b0b0;
 }
 
+.post-content a h6, .post-content a p {
+  font-size: 14px;
+  text-align: left!important;
+}
+
 .post-password-form {
   margin-bottom: 1.75em;
 }
@@ -3128,6 +3133,7 @@ blockquote:after,
 .post-item {
   background-color: #fff;
 }
+
 @media (max-width: 991px) {
   .post-item {
     margin-bottom: 30px;
@@ -3385,7 +3391,7 @@ blockquote:after,
   }
 }
 .small-post-list .post-item .post-thumb {
-  width: 70px;
+  width: 100px;
   height: 70px;
   float: left;
   margin-right: 20px;

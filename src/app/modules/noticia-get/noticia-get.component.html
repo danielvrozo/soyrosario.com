@@ -34,7 +34,6 @@
                             </a>
                             <ul class="post-meta mt-2">
                                 <li>Por: <a href="#">Admin</a></li>
-                                <li>{{ getFechaLetas(fecha) }}</li>
                             </ul>
                             <div [innerHTML]="descripcion | decodeHtml"></div>
                             
@@ -44,7 +43,7 @@
             </div>
             <aside class="col-lg-4 sidebar mt-5 mt-lg-0">
                 
-                <div class="widget popular-post">
+                <div class="widget popular-post widg-noticias">
                     <h5 class="widget-title">Últimas noticias</h5>
                     <div class="widget-wrapper">
                         <ul class="small-post-list">
@@ -56,10 +55,6 @@
                                 </div>
                                 <div class="post-content">
                                     <a [routerLink]="['/noticias/noticia/' + item.id]" [innerHTML]="item.titulo | decodeHtml">  </a>
-                                    <ul class="post-meta">
-                                        <li>{{ getFechaLetas(item.fecha) }}</li>
-                                    </ul>
-
                                     <b [routerLink]="['/noticias/noticia/' + item.id]" class="color-secondary cursor-pointer"> Ver noticia </b>
                                 </div>
                             </li>

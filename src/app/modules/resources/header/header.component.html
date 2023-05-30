@@ -18,27 +18,25 @@
                         </ul>
                     </li>
 
-                    <li><a href="#">Galeria</a>
+                    <li><a href="#" >Galeria</a>
                         <ul class="submenu">
-                            <li><a href="#">Gallery 2col</a></li>
-                            <li><a href="#">Gallery 3col</a></li>
-                            <li><a href="#">Gallery 4col</a></li>
-                            <li><a href="#">Gallery massonry</a></li>
+                            <li *ngFor="let item_g of body_galeria">
+                                <a [routerLink]="['/galeria/'+item_g.id]">{{item_g.hastag}}</a>
+                            </li>
                         </ul>
                     </li>
 
                     <li><a href="#">Mis Redes</a>
                         <ul class="submenu">
-                            <li><a href="https://www.facebook.com/soyrosariosanabria">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/mrosariosanabria/">Instagram</a></li>
-                            <li><a href="https://www.tiktok.com/@mrosariosanabria">Tiktok</a></li>
-                            <li><a href="https://twitter.com/RosarioSanabr">Twitter</a></li>
+                            <li *ngFor="let item of body">
+                                <a href="{{item.link}}">{{item.nombre}}</a>
+                            </li>
                         </ul>
                     </li>
 
-                    <li><a href="#">Contáctenos</a></li>	
+                    <li><a [routerLink]="['/contactenos']">Contáctenos</a></li>	
                 </ul>
-                <a href="#" class="donate">¡Conóceme!</a>
+                <a [routerLink]="['/quien-soy']" class="donate">¡Conóceme!</a>
             </div>
         </nav>
     </div>

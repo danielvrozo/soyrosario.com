@@ -36,3 +36,12 @@
 ::ng-deep .header {
     position: inherit;
 }
+
+.widg-noticias .post-item {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }

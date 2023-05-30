@@ -20,14 +20,27 @@ import { NoticiasUpdateComponent } from './modules/admin/noticias-admin/crud/not
 import { NoticiasAdminComponent } from './modules/admin/noticias-admin/noticias-admin.component';
 import { CrudMeComponent } from './modules/admin/home-admin/crud-me/crud-me.component';
 import { CrudEditarComponent } from './modules/admin/home-admin/crud-editar/crud-editar.component';
+import { RedesAdminComponent } from './modules/admin/redes-admin/redes-admin.component';
+import { RedesCreateComponent } from './modules/admin/redes-admin/crud/redes-create/redes-create.component';
+import { RedesUpdateComponent } from './modules/admin/redes-admin/crud/redes-update/redes-update.component';
+import { RedesDeleteComponent } from './modules/admin/redes-admin/crud/redes-delete/redes-delete.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { ContactoAdminComponent } from './modules/admin/contacto-admin/contacto-admin.component';
+import { GaleriaCreateComponent } from './modules/admin/galeria-admin/crud/galeria-create/galeria-create.component';
+import { GaleriaDeleteComponent } from './modules/admin/galeria-admin/crud/galeria-delete/galeria-delete.component';
+import { GaleriaUpdateComponent } from './modules/admin/galeria-admin/crud/galeria-update/galeria-update.component';
+import { GaleriaAdminComponent } from './modules/admin/galeria-admin/galeria-admin.component';
+import { GaleriaGetComponent } from './modules/galeria-get/galeria-get.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'quien-soy', component: BiografiaComponent },
   { path: 'noticias', component: NoticiasComponent },
+  { path: 'contactenos', component:ContactComponent },
   { path: 'noticias/noticia/:id', component: NoticiaGetComponent },
   { path: 'gobiernos', component: GobiernoComponent },
   { path: 'gobiernos/gobierno/:id', component: GobiernoGetComponent },
+  { path: 'galeria/:id', component: GaleriaGetComponent },
   /* Admin */
   { path: 'admin/home', component: HomeAdminComponent },
   { path: 'admin/home/editar', component: EditarHomeComponent },
@@ -46,6 +59,21 @@ const routes: Routes = [
   { path: 'admin/noticias/crear', component: NoticiasCreateComponent},
   { path: 'admin/noticias/editar/:id', component: NoticiasUpdateComponent},
   { path: 'admin/noticias/eliimnar/:id', component: NoticiasDeleteComponent},
+
+  /*  */
+  { path: 'admin/redes', component: RedesAdminComponent},
+  { path: 'admin/redes/crear', component: RedesCreateComponent},
+  { path: 'admin/redes/editar/:id', component: RedesUpdateComponent},
+  { path: 'admin/redes/eliimnar/:id', component: RedesDeleteComponent},
+
+  /*  */
+  { path: 'admin/galeria', component: GaleriaAdminComponent},
+  { path: 'admin/galeria/crear', component: GaleriaCreateComponent},
+  { path: 'admin/galeria/editar/:id', component: GaleriaUpdateComponent},
+  { path: 'admin/galeria/eliimnar/:id', component: GaleriaDeleteComponent},
+
+  /*  */
+  { path: 'admin/contacto', component: ContactoAdminComponent},
 ];
 
 @NgModule({
