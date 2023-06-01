@@ -39,6 +39,7 @@ export class GaleriaUpdateComponent implements OnInit {
 
         this.response = {
           titulo: this.body[0]['titulo'],
+          descripcion: this.body[0]['descripcion'],
           hastag: this.body[0]['hastag'],
           link_galeria: this.body[0]['link_galeria']
         }
@@ -53,6 +54,7 @@ export class GaleriaUpdateComponent implements OnInit {
 
 
     formData.append('titulo', form.form.controls['titulo']['value']);
+    formData.append('descripcion', form.form.controls['descripcion']['value']);
     formData.append('hastag', form.form.controls['hastag']['value']);
     formData.append('link_galeria', form.form.controls['link_galeria']['value']);
 

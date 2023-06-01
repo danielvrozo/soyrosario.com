@@ -15,6 +15,7 @@ export class GaleriaGetComponent implements OnInit {
 
   noticia:any;
   titulo:any;
+  descripcion:any;
   hastag:any;
   link_original?: SafeResourceUrl;;
   fecha:any;
@@ -42,6 +43,7 @@ export class GaleriaGetComponent implements OnInit {
     this.route.params.subscribe(params => {
       this._ApiGetGaleria.ALL('?id='+params['id']).subscribe((data) => {
         this.titulo = data.body.content[0].titulo;
+        this.descripcion = data.body.content[0].descripcion;
         this.hastag = data.body.content[0].hastag;
         this.link_original = String(data.body.content[0].link_galeria);
         this.fecha = data.body.content[0].fecha;

@@ -108,7 +108,7 @@ a, a:hover, a:focus, a:active {
 }
 
 a:hover, a:focus, a:active {
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 img {
@@ -201,7 +201,7 @@ textarea:focus {
   color: #b0b0b0;
 }
 
-.post-content a h6, .post-content a p {
+.post-content a h6, .post-content a h5, .post-content a p {
   font-size: 14px;
   text-align: left!important;
 }
@@ -332,7 +332,7 @@ blockquote:after,
 }
 @media (max-width: 991px) {
   .navbar .nav li.active > a, .navbar .nav li:hover > a {
-    background-color: #26dde6;
+    background-color: #ec1f78;
     color: #fff !important;
   }
 }
@@ -420,9 +420,9 @@ blockquote:after,
 }
 
 .navbar-toggler {
-  color: #26dde6;
+  color: #ec1f78;
   outline: none !important;
-  border: 1px solid #26dde6;
+  border: 1px solid #ec1f78;
   font-size: 28px;
 }
 
@@ -619,10 +619,10 @@ blockquote:after,
   color: #717171;
 }
 .header .transparent-menu .navbar-nav li.active a {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .header .transparent-menu .navbar-nav li:hover a {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .header.fixed-top-menu {
   position: fixed;
@@ -647,10 +647,10 @@ blockquote:after,
 }
 .header.fixed-top-menu .donate {
   background-color: #fff;
-  color: #26dde6;
+  color: #ec1f78;
 }
 .header .codexcoder-navbar .logo {
-  color: #26dde6;
+  color: #ec1f78;
   padding: 22px 0;
 }
 .header.header-style2 {
@@ -745,14 +745,6 @@ blockquote:after,
   }
 }
 
-.about-bio {
-  overflow: hidden;
-  padding: 40px 20px;
-  background-color: #26dde6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
 @media (max-width: 640px) {
   .about-bio {
     justify-content: center;
@@ -845,11 +837,11 @@ blockquote:after,
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 62px;
-  height: 62px;
+  width: 55px;
+  height: 55px;
   margin-left: -20px;
   margin-top: -20px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   text-align: center;
   color: #fff;
   line-height: 40px;
@@ -860,8 +852,12 @@ blockquote:after,
   align-items: center;
 }
 
+.about-media .media-thumb .play i{
+  margin-left: 3px;
+}
+
 .about-media .media-thumb .play:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 
 .election-campaign-section .section-wrapper {
@@ -912,7 +908,7 @@ blockquote:after,
   text-align: center;
 }
 .newsletter-section.style2 .section-overlay {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .newsletter-section.style2 .newsletter {
   max-width: 720px;
@@ -959,7 +955,7 @@ blockquote:after,
   margin: 0;
 }
 .donate-details-area .donate-details-header p span {
-  color: #26dde6;
+  color: #ec1f78;
   font-weight: 900;
   font-style: italic;
 }
@@ -968,7 +964,7 @@ blockquote:after,
   margin-bottom: 20px;
 }
 .donate-details-area .ddc-content-wrapper .section-head h2 {
-  color: #26dde6;
+  color: #ec1f78;
   font-size: 28px;
   text-align: center;
 }
@@ -1012,10 +1008,10 @@ blockquote:after,
   border-radius: 100%;
 }
 .donate-amount .select-amount {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .donate-amount .select-amount:after {
-  border-color: #26dde6;
+  border-color: #ec1f78;
   content: "";
   font: normal normal normal 6px/1 FontAwesome;
   text-align: center;
@@ -1087,7 +1083,7 @@ blockquote:after,
 }
 .payment-info .submit {
   padding: 12px 30px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
@@ -1267,7 +1263,7 @@ blockquote:after,
   display: inline-block;
 }
 .comments-list .comments .content .reply:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .comments-list .comments .comment-sub-list {
   padding: 0;
@@ -1340,7 +1336,7 @@ blockquote:after,
   background-color: #f3f3f3;
 }
 .comment-response form input[type=submit] {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   margin-top: 20px;
   padding: 12px 35px;
@@ -1371,7 +1367,7 @@ blockquote:after,
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -1386,7 +1382,7 @@ blockquote:after,
 }
 .mission-section .mission-content .play:hover {
   background-color: #fff;
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 .campaign-schedule-lsit-area .campaign-schedule-list {
@@ -1429,12 +1425,12 @@ blockquote:after,
   color: #332929;
 }
 .campaign-schedule-lsit-area .button-group .button.is-checked {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   outline: none;
 }
 .campaign-schedule-lsit-area .button-group .button:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 .campaign-schedule-lsit-area .button-group .button:active {
@@ -1474,7 +1470,7 @@ blockquote:after,
   left: -40px;
   top: -10%;
   font-family: "fontawesome";
-  color: #26dde6;
+  color: #ec1f78;
 }
 .polician-qoute-section .section-overlay .qoute h4:before {
   content: "";
@@ -1482,7 +1478,7 @@ blockquote:after,
   right: -40px;
   top: -10%;
   font-family: "fontawesome";
-  color: #26dde6;
+  color: #ec1f78;
 }
 .polician-qoute-section .section-overlay .qoute .name {
   color: #fff;
@@ -1577,7 +1573,7 @@ blockquote:after,
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -1641,7 +1637,7 @@ blockquote:after,
   width: 40px;
   margin-left: -20px;
   height: 4px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .achievement-section .section-overlay .achievement .achievement-item-inner .text {
   color: #999;
@@ -1652,7 +1648,7 @@ blockquote:after,
   padding: 60px 0;
 }
 .achievement-section.style3 .section-overlay {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .achievement-section.style3 .section-overlay .achievement .achievement-item {
   background-color: transparent;
@@ -1702,7 +1698,7 @@ blockquote:after,
   padding: 8px 30px;
 }
 .neta-info-section .neta-info-item:hover h5 {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .neta-info-section.style2 {
   padding-top: 0;
@@ -1742,7 +1738,7 @@ blockquote:after,
   color: #332929;
 }
 .neta-info-section.style2 .neta-info-item-inner:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .neta-info-section.style2 .neta-info-item-inner:hover h5, .neta-info-section.style2 .neta-info-item-inner:hover p {
   color: #fff;
@@ -1767,7 +1763,7 @@ blockquote:after,
   overflow: hidden;
 }
 .about-politician-section .politician-container .politician-info .politician-content .custom-btn:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .about-politician-section .politician-container .politician-info .politician-thumb {
   margin-bottom: 15px;
@@ -1862,7 +1858,7 @@ blockquote:after,
   margin-bottom: 0;
 }
 .biography-section .biography .biography-item:hover .bio-year {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 .biography-section .biography .biography-item .bio-date {
@@ -1920,7 +1916,7 @@ blockquote:after,
   font-size: 36px;
   position: absolute;
   background-color: #fff;
-  color: #26dde6;
+  color: #ec1f78;
   transform: rotate(45deg);
   left: 30%;
   top: 0;
@@ -1953,7 +1949,7 @@ blockquote:after,
 }
 .ourstatement .ourstatement-container .statement-item a {
   display: inline-block;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   padding: 7px 30px;
   top: -18px;
@@ -1987,13 +1983,13 @@ blockquote:after,
   font-size: 26px;
 }
 .ourstatement .swiper-controller:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .ourstatement .swiper-controller:focus {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .ourstatement .swiper-controller:active {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 .ourstatement .swiper-controller.swiper-controller-button-left {
   left: -20px;
@@ -2033,7 +2029,7 @@ blockquote:after,
   width: 70px;
   height: 50px;
   text-align: center;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2047,7 +2043,7 @@ blockquote:after,
   position: absolute;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #26dde6 transparent;
+  border-color: #ec1f78 transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -2092,7 +2088,7 @@ blockquote:after,
   cursor: pointer;
 }
 .testimonial .gallery-thumbs .swiper-slide.swiper-slide-active img {
-  border: 6px solid #26dde6;
+  border: 6px solid #ec1f78;
   width: 90px;
   height: 90px;
 }
@@ -2120,7 +2116,7 @@ blockquote:after,
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 3px solid #26dde6;
+  border: 3px solid #ec1f78;
   position: relative;
 }
 .testimonial-section.style2 .testimonial .testimonial-container .testimonial-content .author:after {
@@ -2130,7 +2126,7 @@ blockquote:after,
   height: 34px;
   text-align: center;
   color: #fff;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -2187,7 +2183,7 @@ blockquote:after,
 }
 
 .join-us-section {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   padding: 30px 0;
 }
 .join-us-section .join-us-content {
@@ -2216,7 +2212,7 @@ blockquote:after,
   margin-top: 0;
 }
 .about-content h3 span {
-  color: #26dde6;
+  color: #ec1f78;
   font-weight: 700;
 }
 .about-content .about-mission .about-mission-tab {
@@ -2248,7 +2244,7 @@ blockquote:after,
   bottom: -1px;
   height: 2px;
   width: 100%;
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 
 .urgent-causes-section {
@@ -2260,7 +2256,7 @@ blockquote:after,
 
 .urgent-cause-content .urgent-cause-cata {
   font-size: 18px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   padding: 3px 10px;
   margin-bottom: 15px;
@@ -2294,7 +2290,7 @@ blockquote:after,
   margin-bottom: 15px;
 }
 .progress .progress-bar {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   position: relative;
   overflow: visible;
   border-radius: 12px 0 0 12px;
@@ -2306,7 +2302,7 @@ blockquote:after,
   width: 42px;
   height: 21px;
   line-height: 21px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2317,7 +2313,7 @@ blockquote:after,
   position: absolute;
   border-style: solid;
   border-width: 8px 8px 0px;
-  border-color: #26dde6 transparent;
+  border-color: #ec1f78 transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -2335,7 +2331,7 @@ blockquote:after,
   font-size: 20px;
 }
 .achieve-goal .raise-goal span {
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 .recent-causes-section .recent-cause-item {
@@ -2473,7 +2469,7 @@ blockquote:after,
   margin-bottom: -5px;
 }
 .member .custom-btn:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 
 .latest-news-section .small-post-list {
@@ -2522,7 +2518,7 @@ blockquote:after,
   display: block;
 }
 .latest-news-section .small-post-list .post-item .post-content > a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .latest-news-section .small-post-list .post-item .post-content .post-meta li {
   color: #999;
@@ -2570,7 +2566,7 @@ blockquote:after,
   color: #332929;
 }
 .volunteer-item .volunteer-content .name a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .volunteer-item .volunteer-content .designation {
   margin-bottom: 10px;
@@ -2886,8 +2882,8 @@ blockquote:after,
 }
 .product-info .custom-btn {
   display: inline-block;
-  background-color: #26dde6;
-  border-color: #26dde6;
+  background-color: #ec1f78;
+  border-color: #ec1f78;
   color: #fff;
   padding: 10px 40px;
 }
@@ -3028,7 +3024,7 @@ blockquote:after,
 
 .donate:hover {
   color: #fff;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   transition: 0.3s ease;
 }
 
@@ -3074,7 +3070,7 @@ blockquote:after,
 }
 @media (min-width: 992px) {
   .section-padding-140 {
-    padding: 140px 0;
+    padding: 100px 0;
   }
 }
 
@@ -3163,7 +3159,7 @@ blockquote:after,
   color: #332929;
 }
 .post-item .post-content .title > a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 .post-meta {
@@ -3210,13 +3206,13 @@ blockquote:after,
   cursor: pointer;
 }
 .donation label:hover {
-  border-color: #26dde6;
-  color: #26dde6;
+  border-color: #ec1f78;
+  color: #ec1f78;
   background-color: transparent;
 }
 .donation label.select-amount {
-  border-color: #26dde6;
-  color: #26dde6;
+  border-color: #ec1f78;
+  color: #ec1f78;
 }
 @media (max-width: 767px) {
   .donation label {
@@ -3268,7 +3264,7 @@ blockquote:after,
 }
 .campaign-list .campaign-item .campaign-content {
   width: 50%;
-  padding: 30px;
+  padding: 0px 30px;
 }
 @media (max-width: 991px) {
   .campaign-list .campaign-item .campaign-content {
@@ -3283,7 +3279,7 @@ blockquote:after,
   color: #332929;
 }
 .campaign-list .campaign-item .campaign-content .campaign-title a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .campaign-list .campaign-item .campaign-content .campaign-detail-list {
   padding-left: 0;
@@ -3341,7 +3337,7 @@ blockquote:after,
   text-align: center;
 }
 .become-member form p input {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
   margin-top: 30px;
   margin-bottom: 0;
@@ -3373,7 +3369,7 @@ blockquote:after,
 }
 .news-letter-content .news-letter-content-inner form p input {
   margin-bottom: 0;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   border: none;
   color: #fff;
   padding: 13px 40px;
@@ -3455,7 +3451,7 @@ blockquote:after,
   color: rgba(255, 255, 255, 0.6);
 }
 .tweet-list .tweet-item .tweet-content p a {
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 .breadcrumb {
@@ -3471,7 +3467,7 @@ blockquote:after,
   color: #fff;
 }
 .breadcrumb li a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .breadcrumb li:before {
   color: #fff;
@@ -3561,11 +3557,11 @@ blockquote:after,
   transition: 0.3s;
 }
 .pagination-area .pagination li a:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 .pagination-area .pagination li .active {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 @media (max-width: 640px) {
@@ -3682,7 +3678,7 @@ blockquote:after,
   color: #332929;
 }
 .product-item .product-content .price {
-  color: #26dde6;
+  color: #ec1f78;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 0;
@@ -3784,7 +3780,7 @@ blockquote:after,
   border-radius: 30px;
 }
 .neta-issue-item .issue-cata:hover > a {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 .neta-issue-item:after {
@@ -3943,7 +3939,7 @@ blockquote:after,
 .comingsoon-section .comingsoon .newsletter-section .newsletter .submit {
   margin-top: -22px;
   padding: 14px 50px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 
 .error-page-section {
@@ -4021,8 +4017,8 @@ blockquote:after,
   margin-bottom: 30px;
 }
 .error-page-section .error-page .error-page-inner .error-search p a {
-  color: #26dde6;
-  border-bottom: 2px solid #26dde6;
+  color: #ec1f78;
+  border-bottom: 2px solid #ec1f78;
   font-weight: 600;
 }
 .error-page-section .error-page .error-page-inner .error-search form {
@@ -4056,7 +4052,7 @@ blockquote:after,
   width: 100%;
 }
 .rating .rating-color i {
-  color: #26dde6;
+  color: #ec1f78;
 }
 
 @media (max-width: 400px) {
@@ -4182,7 +4178,7 @@ blockquote:after,
 }
 .cart-plus-minus .qtybutton:hover {
   color: #fff;
-  background: #26dde6 !important;
+  background: #ec1f78 !important;
 }
 .cart-plus-minus .inc.qtybutton {
   border-left: 1px solid #e0e0e0;
@@ -4205,8 +4201,8 @@ blockquote:after,
   transition: 0.3s ease;
 }
 .custom-btn:hover {
-  background-color: #26dde6;
-  border-color: #26dde6;
+  background-color: #ec1f78;
+  border-color: #ec1f78;
   color: #fff;
   border-radius: 30px;
   overflow: hidden;
@@ -4224,8 +4220,8 @@ blockquote:after,
   padding: 5px 20px;
 }
 .custom-btn-sm:hover {
-  background-color: #26dde6;
-  border-color: #26dde6;
+  background-color: #ec1f78;
+  border-color: #ec1f78;
 }
 
 .custom-btn-bg {
@@ -4233,7 +4229,7 @@ blockquote:after,
   border-color: #fff;
 }
 .custom-btn-bg:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
 }
 
 .banner {
@@ -4430,8 +4426,8 @@ blockquote:after,
   color: #787d85;
 }
 .banner.banner-7 .banner-content .banner-content-text .custom-btn {
-  background-color: #26dde6;
-  border-color: #26dde6;
+  background-color: #ec1f78;
+  border-color: #ec1f78;
 }
 
 .banner-slider {
@@ -4479,7 +4475,7 @@ blockquote:after,
   top: 50%;
   transform: translateY(-50%);
   background-color: #fff;
-  color: #26dde6;
+  color: #ec1f78;
   text-align: center;
   z-index: 1;
   font-size: 28px;
@@ -4540,7 +4536,7 @@ blockquote:after,
 }
 .sidebar .widget.catagories ul li a:hover {
   padding-left: 20px;
-  color: #26dde6;
+  color: #ec1f78;
 }
 .sidebar .widget.catagories ul li:last-child a {
   border-bottom: none;
@@ -4565,7 +4561,7 @@ blockquote:after,
   transition: 0.3s;
 }
 .sidebar .widget.popular-post .small-post-list > li a:hover {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .sidebar .widget.popular-post .small-post-list > li .post-meta {
   padding-bottom: 0;
@@ -4602,7 +4598,7 @@ blockquote:after,
   border-radius: 1px;
 }
 .sidebar .widget.tag .tag-list li a:hover {
-  background-color: #26dde6;
+  background-color: #ec1f78;
   color: #fff;
 }
 
@@ -4700,7 +4696,7 @@ blockquote:after,
   color: #999;
 }
 .sidebar .popular-product .small-post-list .product-item .product-content .rating i {
-  color: #26dde6;
+  color: #ec1f78;
 }
 .sidebar .popular-product .small-post-list .product-item .product-content .rating i.color {
   color: #999;
@@ -4719,7 +4715,7 @@ blockquote:after,
 
 .shop-cart > thead > tr {
   height: 65px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   border-top: 1px solid #ebebeb;
   border-left: 1px solid #ebebeb;
 }
@@ -4840,7 +4836,7 @@ blockquote:after,
   color: #fff;
   padding: 12px 30px;
   border: none;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   margin-left: 6px;
   margin-top: -2px;
   border-radius: 2px;
@@ -4859,7 +4855,7 @@ blockquote:after,
   text-transform: uppercase;
   font-weight: 700;
   padding: 12px 25px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   border-color: #ff6f50;
   color: #fff;
   border: none;
@@ -4954,7 +4950,7 @@ blockquote:after,
   font-size: 15px;
   font-weight: 700;
   padding: 10px 25px;
-  background-color: #26dde6;
+  background-color: #ec1f78;
   border: none;
   color: #fff;
   margin-top: 20px;
@@ -4998,8 +4994,8 @@ blockquote:after,
 }
 
 .cart-total-2 .custom-btn {
-  background-color: #26dde6;
-  border-color: #26dde6;
+  background-color: #ec1f78;
+  border-color: #ec1f78;
   color: #fff;
 }
 

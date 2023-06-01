@@ -11,6 +11,7 @@ export class GaleriaCreateComponent implements OnInit {
 
   code:any;
   titulo:any;
+  descripcion:any;
   hastag:any;
   link_galeria:any;
   opacity:any = 1;
@@ -30,6 +31,7 @@ export class GaleriaCreateComponent implements OnInit {
     let formData = new FormData();
 
     formData.append('titulo', form.value.titulo);
+    formData.append('descripcion', form.value.descripcion);
     formData.append('hastag', form.value.hastag);
     formData.append('link_galeria', form.value.link_galeria);
 

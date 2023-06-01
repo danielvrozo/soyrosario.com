@@ -17,4 +17,6 @@
 .heigth-info-noticia{
     height: 160px;
     margin-bottom: 0px;
+    word-break: break-all;
+    overflow: auto;
 }

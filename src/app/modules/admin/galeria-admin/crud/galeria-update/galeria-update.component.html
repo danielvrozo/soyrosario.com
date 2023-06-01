@@ -37,6 +37,17 @@
                                 </div>
 
                                 <div class="mb-3">
+                                    <label for="">Descripción:</label>
+                                    <editor [(ngModel)]="response.descripcion" name="descripcion"
+                                    [init]="{
+                                        base_url: '/tinymce', 
+                                        suffix: '.min'        
+                                      }" apiKey="lvrm6t8a14mownj3hle33ox65yax79pf2d0v506bzvmipkd4">
+                                      hola
+                                    </editor>
+                                </div>
+
+                                <div class="mb-3">
                                     <label for="">#Hastag:</label>
                                     <input type="text"  class="form-control" [(ngModel)]="response.hastag" name="hastag">
                                 </div>

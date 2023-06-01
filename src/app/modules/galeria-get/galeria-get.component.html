@@ -25,9 +25,7 @@
                     <article class="entry-single post-item">
                         <div class="post-content">
                             <h2>{{ titulo }}</h2>
-                            <ul class="post-meta mt-2">
-                                <li>Por: <a href="#">Admin</a></li>
-                            </ul>
+                            <div class="mb-2" [innerHTML]="descripcion | decodeHtml"></div>
                             <div *ngIf="album">
                                 <carousel>
                                     <slide *ngFor="let photo of album.photo">

@@ -34,6 +34,7 @@
                                     <thead>
                                         <tr>
                                             <th>Tiulo</th>
+                                            <th>Descripción</th>
                                             <th>#Hastag</th>
                                             <th>Galeria ID</th>
                                             <th>Fecha</th>
@@ -43,6 +44,7 @@
                                     <tbody *ngIf="show">
                                         <tr *ngFor="let item of body">
                                             <td>{{item['titulo']}}</td>
+                                            <td [innerHTML]="(item.descripcion | decodeHtml)"></td>
                                             <td>{{item['hastag']}}</td>
                                             <td>{{item['link_galeria']}}</td>
                                             <td>{{item['fecha']}}</td>
