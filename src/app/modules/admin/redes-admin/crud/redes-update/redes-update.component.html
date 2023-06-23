@@ -31,6 +31,12 @@
                         </div>
                         <div class="card-body">
                             <form (ngSubmit)="Save(form)" #form="ngForm">
+
+                                <div class="mb-3">
+                                    <label for=""># de Orden:</label>
+                                    <input type="number" id="orden" name="orden" [(ngModel)]="response.orden">
+                                </div>
+                                
                                 <div class="mb-3">
                                     <label for="">Titulo:</label>
                                     <input type="text"  class="form-control" [(ngModel)]="response.nombre" name="nombre">

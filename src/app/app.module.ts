@@ -54,6 +54,11 @@ import { GaleriaDeleteComponent } from './modules/admin/galeria-admin/crud/galer
 import { GaleriaUpdateComponent } from './modules/admin/galeria-admin/crud/galeria-update/galeria-update.component';
 import { GaleriaGetComponent } from './modules/galeria-get/galeria-get.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { RedirecLogin } from './class/redirect';
+import { LoginComponent } from './modules/admin/login/login.component';
+import { EditarMaterialesComponent } from './modules/admin/materiales-admin/crud/editar-materiales/editar-materiales.component';
+import { MaterialesAdminComponent } from './modules/admin/materiales-admin/materiales-admin.component';
+import { MaterialesComponent } from './modules/materiales/materiales.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +79,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     GobiernoGetComponent,
     GobiernoComponent,
     BiografiaComponent,
+
     HomeAdminComponent,
     HeaderAdminComponent,
     EditarHomeComponent,
@@ -94,12 +100,20 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     RedesUpdateComponent,
     RedesDeleteComponent,
     ContactComponent,
+
     ContactoAdminComponent,
+    
     GaleriaAdminComponent,
     GaleriaCreateComponent,
     GaleriaDeleteComponent,
     GaleriaUpdateComponent,
-    GaleriaGetComponent
+    GaleriaGetComponent,
+
+    LoginComponent,
+
+    MaterialesAdminComponent,
+    EditarMaterialesComponent,
+    MaterialesComponent
   ],
   imports: [
     BrowserModule,
@@ -111,7 +125,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ReactiveFormsModule,
     CarouselModule.forRoot()
   ],
-  providers: [FechaLetras, { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }],
+  providers: [FechaLetras, RedirecLogin, { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -31,12 +31,17 @@ import { GaleriaDeleteComponent } from './modules/admin/galeria-admin/crud/galer
 import { GaleriaUpdateComponent } from './modules/admin/galeria-admin/crud/galeria-update/galeria-update.component';
 import { GaleriaAdminComponent } from './modules/admin/galeria-admin/galeria-admin.component';
 import { GaleriaGetComponent } from './modules/galeria-get/galeria-get.component';
+import { LoginComponent } from './modules/admin/login/login.component';
+import { EditarMaterialesComponent } from './modules/admin/materiales-admin/crud/editar-materiales/editar-materiales.component';
+import { MaterialesAdminComponent } from './modules/admin/materiales-admin/materiales-admin.component';
+import { MaterialesComponent } from './modules/materiales/materiales.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'quien-soy', component: BiografiaComponent },
   { path: 'noticias', component: NoticiasComponent },
   { path: 'contactenos', component:ContactComponent },
+  { path: 'material-de-campaña', component:MaterialesComponent },
   { path: 'noticias/noticia/:id', component: NoticiaGetComponent },
   { path: 'gobiernos', component: GobiernoComponent },
   { path: 'gobiernos/gobierno/:id', component: GobiernoGetComponent },
@@ -49,6 +54,9 @@ const routes: Routes = [
   /*  */
   { path: 'admin/quiensoy', component: BiografiaAdminComponent },
   { path: 'admin/quiensoy/editar', component: EditarBioComponent },
+
+  { path: 'admin/materiales', component: MaterialesAdminComponent },
+  { path: 'admin/materiales/editar', component: EditarMaterialesComponent },
   /*  */
   { path: 'admin/gobierno', component: GobiernoAdminComponent},
   { path: 'admin/gobierno/crear', component: GobiernoCreateComponent},
@@ -74,6 +82,7 @@ const routes: Routes = [
 
   /*  */
   { path: 'admin/contacto', component: ContactoAdminComponent},
+  { path: 'admin/login', component: LoginComponent },
 ];
 
 @NgModule({

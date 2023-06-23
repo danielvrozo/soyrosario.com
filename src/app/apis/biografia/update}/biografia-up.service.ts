@@ -13,8 +13,8 @@ export class BiografiaUpService {
     private http:HttpClient
   ) { }
 
-  UPDATE(data:any): Observable<any> {
-    return this.http.post(this.domain + this.endpoint, JSON.stringify(data), {
+  UPDATE(items:any, data:any): Observable<any> {
+    return this.http.post(`${this.domain + this.endpoint + items}`, data, {
       observe: 'response'
     });
   }

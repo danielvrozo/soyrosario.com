@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BiografiaService } from 'src/app/apis/biografia/get/biografia.service';
+import { RedirecLogin } from 'src/app/class/redirect';
 
 @Component({
   selector: 'app-biografia-admin',
@@ -12,7 +13,8 @@ export class BiografiaAdminComponent implements OnInit {
   body:any;
 
   constructor(
-    private _ApiBiografia: BiografiaService
+    private _ApiBiografia: BiografiaService,
+    private _VerificarLogin: RedirecLogin
   ){}
 
   ngOnInit(): void {
@@ -20,6 +22,12 @@ export class BiografiaAdminComponent implements OnInit {
       window.scroll(0,0);
     }, 200);
     this.MostrarInfo();
+
+    this.VerificarLogin();
+  }
+
+  VerificarLogin(){
+    this._VerificarLogin.IsLogin();
   }
 
   MostrarInfo(){
@@ -27,5 +35,5 @@ export class BiografiaAdminComponent implements OnInit {
       this.show = true;
       this.body = data.body.content;
     });
-  }
+  }  
 }

@@ -32,6 +32,20 @@
                         <div class="card-body">
                             <form (ngSubmit)="Save(form)" #form="ngForm">
                                 <div class="mb-3">
+                                    <label for="">Mostrar noticia:</label> <br>
+                                    <select name="s_Mostrar" (change)="onOptionChange($event)" class="py-1 px-4" >
+                                        <option value="{{ response.mostrar }}"> {{response.mostrar}} </option>
+                                        <option *ngIf="response.mostrar === 'Si'" value="No">No</option>
+                                        <option *ngIf="response.mostrar === 'No'" value="Si">Si</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for=""># de Orden:</label>
+                                    <input type="number" id="orden" name="orden" [(ngModel)]="response.orden">
+                                </div>
+
+                                <div class="mb-3">
                                     <label for="">Titulo:</label>
                                     <editor [(ngModel)]="response.titulo" name="titulo"
                                     [init]="{

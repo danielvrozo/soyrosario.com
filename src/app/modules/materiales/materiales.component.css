@@ -1,0 +1,38 @@
+.page-header {
+    background-image: url(../../../assets/images/desings/banner-2.png);
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header .overlay {
+    padding: 70px 0;
+    background-color: rgb(255 255 255 / 83%);
+}
+
+.page-header .overlay .page-header-content {
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-header .overlay .page-header-content h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+  
+.page-header .overlay .page-header-content .breadcrumb {
+    background-color: transparent;
+}
+
+.post-thumb img {
+    height: 280px;
+    object-fit: cover;
+}
+
+::ng-deep .header {
+    position: inherit;
+}

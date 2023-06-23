@@ -12,6 +12,11 @@ export class HomeComponent implements OnInit {
   body:any;
   image_bg:any;
   image_bg_responsive:any;
+
+  apiKey: string = 'AIzaSyCI5SKQmgFMYtTb5y9UEGMnhH4jb55hn9w';
+  playlistId: string = 'PLslOOJK3qGRnrHATs7yRYl6UL7DMIADov';
+  videos: any[] = [];
+
   constructor(
     private _ApiBanner: BannerGetService
   ){}

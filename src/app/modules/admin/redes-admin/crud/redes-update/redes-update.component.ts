@@ -39,6 +39,7 @@ export class RedesUpdateComponent implements OnInit {
 
         this.response = {
           nombre: this.body[0]['nombre'],
+          orden: this.body[0]['orden'],
           link: this.body[0]['link']
         }
       });
@@ -52,6 +53,7 @@ export class RedesUpdateComponent implements OnInit {
 
 
     formData.append('nombre', form.form.controls['nombre']['value']);
+    formData.append('orden', form.form.controls['orden']['value']);
     formData.append('link', form.form.controls['link']['value']);
 
 

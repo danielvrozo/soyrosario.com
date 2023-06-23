@@ -34,7 +34,8 @@
                                     <thead>
                                         <tr>
                                             <th>Tiulo</th>
-                                            <th>Descripción</th>
+                                            <th>Orden</th>
+                                            <th>Mostrar</th>
                                             <th>Imagen </th>
                                             <th>PDF </th>
                                             <th>Fecha</th>
@@ -44,7 +45,8 @@
                                     <tbody *ngIf="show">
                                         <tr *ngFor="let item of body">
                                             <td [innerHTML]="item.titulo | decodeHtml "></td>
-                                            <td [innerHTML]="(item.descripcion | slice:0:320) + (item.descripcion.length > 320 ? '...' : '' | decodeHtml)"></td>
+                                            <td>{{item['orden']}}</td>
+                                            <td class="text-center"><span class="mostrar_{{item['mostrar']}}">{{item['mostrar']}}</span></td>
                                             <td>{{item['imagen_url']}}</td>
                                             <td>{{item['pdf_url']}}</td>
                                             <td>{{item['fecha']}}</td>

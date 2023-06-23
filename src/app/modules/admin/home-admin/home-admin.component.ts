@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BannerGetService } from 'src/app/apis/banner/all/banner-get.service';
 import { MeGetService } from 'src/app/apis/me/get/me-get.service';
 import { AllVideoService } from 'src/app/apis/videos/all/all-video.service';
+import { RedirecLogin } from 'src/app/class/redirect';
 
 @Component({
   selector: 'app-home-admin',
@@ -21,7 +22,8 @@ export class HomeAdminComponent implements OnInit {
   constructor(
     private _ApiBanner: BannerGetService,
     private _ApiMe: MeGetService,
-    private _ApiVideos: AllVideoService
+    private _ApiVideos: AllVideoService,
+    private _VerificarLogin: RedirecLogin
   ){}
 
   ngOnInit(): void {
@@ -31,6 +33,11 @@ export class HomeAdminComponent implements OnInit {
     this.MostrarInfoFrase();
     this.MostrarInfoBanner();
     this.MostrarVideos();
+    this.VerificarLogin();
+  }
+
+  VerificarLogin(){
+    this._VerificarLogin.IsLogin();
   }
 
   MostrarInfoBanner(){

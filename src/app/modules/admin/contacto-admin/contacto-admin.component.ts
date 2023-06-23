@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactoAllService } from 'src/app/apis/contacto/contacto-all.service';
+import { RedirecLogin } from 'src/app/class/redirect';
 
 @Component({
   selector: 'app-contacto-admin',
@@ -11,7 +12,8 @@ export class ContactoAdminComponent implements OnInit {
   show = false;
   body:any;
   constructor(
-    private _Api: ContactoAllService
+    private _Api: ContactoAllService,
+    private _VerificarLogin: RedirecLogin
   ){}
 
   ngOnInit(): void {
@@ -19,6 +21,11 @@ export class ContactoAdminComponent implements OnInit {
       window.scroll(0,0);
     }, 200);
     this.Mostrar();
+    this.VerificarLogin();
+  }
+
+  VerificarLogin(){
+    this._VerificarLogin.IsLogin();
   }
 
   Mostrar(){

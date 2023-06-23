@@ -31,6 +31,8 @@
                                         <tr>
                                             <th>Tiulo</th>
                                             <th>Descripción</th>
+                                            <th>Imagen </th>
+                                            <th>Hoja de vida (PDF) </th>
                                             <th>Acción</th>
                                         </tr>
                                     </thead>
@@ -38,6 +40,8 @@
                                         <tr *ngIf="show">
                                             <td [innerHTML]="body[0]['titulo'] | decodeHtml"></td>
                                             <td [innerHTML]="body[0]['descripcion'] | decodeHtml"></td>
+                                            <td>{{body[0]['imagen_url']}}</td>
+                                            <td>{{body[0]['pdf_url']}}</td>
                                             <td>
                                                 <a [routerLink]="['editar']" class="bg-info text-white px-3 py-2">Editar</a>
                                             </td>

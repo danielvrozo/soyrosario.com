@@ -11,6 +11,8 @@ import { AllNoticiasService } from 'src/app/apis/noticias/all/all-noticias.servi
 export class NoticiasUpdateComponent implements OnInit {
 
   show = false;
+  s_Mostrar: any;
+  orden:any;
   id:any;
   body:any;
   response:any = {};
@@ -31,6 +33,11 @@ export class NoticiasUpdateComponent implements OnInit {
     this.MostrarInfo();
   }
 
+  onOptionChange(event: any) {
+    const selectedValue = event.target.value;
+    this.s_Mostrar = selectedValue;
+  }
+
   MostrarInfo(){
     this.route.params.subscribe(params => {
       this._Api.ALL_GET_NOTICIAS('?id='+params['id']).subscribe((data) => {
@@ -39,6 +46,8 @@ export class NoticiasUpdateComponent implements OnInit {
         this.body = data.body.content;
 
         this.response = {
+          mostrar: this.body[0]['mostrar'],
+          orden: this.body[0]['orden'],
           titulo: this.body[0]['titulo'],
           descripcion: this.body[0]['descripcion'],
           imagen_url: this.body[0]['imagen_url'],
@@ -56,6 +65,12 @@ export class NoticiasUpdateComponent implements OnInit {
     this.image_url = this.image_url ?? this.response.imagen_url;
     this.pdf_url = this.pdf_url ?? this.response.pdf_url;
 
+    if(this.s_Mostrar == undefined){
+      this.s_Mostrar = 'Si';
+    }
+
+    formData.append('mostrar', this.s_Mostrar);
+    formData.append('orden', form.form.controls['orden']['value']);
     formData.append('titulo', form.form.controls['titulo']['value']);
     formData.append('descripcion', form.form.controls['descripcion']['value']);
     formData.append('pdf_url', this.pdf_url);

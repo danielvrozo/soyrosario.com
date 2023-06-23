@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllGobiernoService } from 'src/app/apis/gobierno/all/all-gobierno.service';
+import { RedirecLogin } from 'src/app/class/redirect';
 
 @Component({
   selector: 'app-gobierno-admin',
@@ -11,7 +12,8 @@ export class GobiernoAdminComponent implements OnInit {
   show = false;
   body:any;
   constructor(
-    private _ApiVerGobierno: AllGobiernoService
+    private _ApiVerGobierno: AllGobiernoService,
+    private _VerificarLogin: RedirecLogin
   ){}
 
   ngOnInit(): void {
@@ -19,6 +21,11 @@ export class GobiernoAdminComponent implements OnInit {
       window.scroll(0,0);
     }, 200);
     this.Mostrar();
+    this.VerificarLogin();
+  }
+
+  VerificarLogin(){
+    this._VerificarLogin.IsLogin();
   }
 
   Mostrar(){

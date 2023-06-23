@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RedesAllService } from 'src/app/apis/redes/redes-all.service';
+import { RedirecLogin } from 'src/app/class/redirect';
 
 @Component({
   selector: 'app-redes-admin',
@@ -11,7 +12,8 @@ export class RedesAdminComponent implements OnInit {
   show = false;
   body:any;
   constructor(
-    private _ApiRedes: RedesAllService
+    private _ApiRedes: RedesAllService,
+    private _VerificarLogin: RedirecLogin
   ){}
 
   ngOnInit(): void {
@@ -19,6 +21,11 @@ export class RedesAdminComponent implements OnInit {
       window.scroll(0,0);
     }, 200);
     this.MostrarRedes();
+    this.VerificarLogin();
+  }
+
+  VerificarLogin(){
+    this._VerificarLogin.IsLogin();
   }
 
   MostrarRedes(){

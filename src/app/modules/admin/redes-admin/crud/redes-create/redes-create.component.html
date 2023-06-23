@@ -32,6 +32,11 @@
                         <div class="card-body">
                             <form (ngSubmit)="Save(form)" #form="ngForm">
                                 <div class="mb-3">
+                                    <label for=""># de Orden:</label>
+                                    <input type="number" id="orden" name="orden" [(ngModel)]="orden">
+                                </div>
+                                
+                                <div class="mb-3">
                                     <label for="">Nombre de la red social:</label>
                                     <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" class="form-group">
                                 </div>

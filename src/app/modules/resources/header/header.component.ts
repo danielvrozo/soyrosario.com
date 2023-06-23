@@ -11,6 +11,9 @@ export class HeaderComponent implements OnInit {
   apps = false;
   body:any;
   body_galeria:any;
+  showMobileRedes: boolean = false;
+  showMobileGaleria: boolean = false;
+  
   constructor(
     private _ApiRedes: RedesAllService,
     private _ApiGaleria: GaleriaAllService
@@ -20,6 +23,9 @@ export class HeaderComponent implements OnInit {
     this.MostrarRedes();
     this.MostrarGalerias();
   }
+
+
+
 
   MostrarRedes(){
     this._ApiRedes.ALL('?id=ALL').subscribe((data) => {

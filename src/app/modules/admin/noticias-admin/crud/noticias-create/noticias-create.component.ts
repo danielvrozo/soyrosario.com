@@ -10,6 +10,8 @@ import { AllNoticiasService } from 'src/app/apis/noticias/all/all-noticias.servi
 export class NoticiasCreateComponent implements OnInit {
 
   code:any;
+  s_Mostrar: any;
+  orden:any;
   titulo:any;
   descripcion:any;
   image_url:any;
@@ -26,10 +28,21 @@ export class NoticiasCreateComponent implements OnInit {
     }, 200);
   }
 
+  onOptionChange(event: any) {
+    const selectedValue = event.target.value;
+    this.s_Mostrar = selectedValue;
+  }
+
   Save(form: NgForm){
     this.opacity = .5;
     let formData = new FormData();
 
+    if(this.s_Mostrar == undefined){
+      this.s_Mostrar = 'Si';
+    }
+
+    formData.append('mostrar', this.s_Mostrar);
+    formData.append('orden', form.value.orden);
     formData.append('titulo', form.value.titulo);
     formData.append('descripcion', form.value.descripcion);
     formData.append('pdf_url', this.pdf_url);

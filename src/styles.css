@@ -414,7 +414,7 @@ blockquote:after,
   .navbar .nav li .submenu li a {
     padding: 10px 15px;
     display: block;
-    color: #fff !important;
+    color: #ec1f78;
     background-color: transparent;
   }
 }
@@ -704,7 +704,7 @@ blockquote:after,
 
 .about-section {
   width: 100%;
-  height: 458px;
+  height: 180px;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -751,8 +751,6 @@ blockquote:after,
   }
 }
 .about-bio .politician-thumb {
-  width: 160px;
-  height: 160px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -780,17 +778,22 @@ blockquote:after,
 }
 
 .about-qoute {
-  padding: 40px 30px 30px 75px;
+  padding: 25px 25px 20px 30px;
   position: relative;
   background-color: #fff;
+  text-align: left;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
+
 .about-qoute:after {
+  display: none;
   content: "";
   position: absolute;
   font-family: "fontawesome";
   left: 15px;
   top: 20px;
-  font-size: 50px;
+  font-size: 35px;
   color: #f3f3f3;
   z-index: 1;
 }
@@ -814,7 +817,6 @@ blockquote:after,
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 13, 13, 0.3);
 }
 .about-media .col-md-12 .view-more {
   color: #717171;
