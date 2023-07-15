@@ -2,8 +2,8 @@
 
 @media (max-width: 770px) {
     ::ng-deep .header.style-1 .navbar-toggler {
-        color: #ec1f78;
-        border-color: #ec1f78;
+        color: #633B8F;
+        border-color: #633B8F;
     }
     
     ::ng-deep .navbar-nav {

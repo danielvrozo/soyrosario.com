@@ -10,23 +10,23 @@
   }
 
   .countdown .countdown-item {
-    background: #ec1f7878;
+    background: #633B8F78;
 }
 
 .countdown .countdown-item:first-child {
-  background-color: #ec1f7878;
+  background-color: #633B8F78;
 }
 
 .countdown .countdown-item:nth-child(2) {
-  background-color: #ec1f7878;
+  background-color: #633B8F78;
 }
 
 .countdown .countdown-item:nth-child(3) {
-  background-color: #ec1f7878;
+  background-color: #633B8F78;
 }
 
 .countdown .countdown-item:last-child {
-  background-color: #ec1f7878;
+  background-color: #633B8F78;
 }
 
 @media (max-width: 770px) {

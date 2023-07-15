@@ -8,7 +8,7 @@ import { RedesAllService } from 'src/app/apis/redes/redes-all.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  apps = false;
+  apps = true;
   body:any;
   body_galeria:any;
   showMobileRedes: boolean = false;
