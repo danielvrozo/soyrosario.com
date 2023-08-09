@@ -2,6 +2,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.whatspp-plugin {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.whatspp-plugin span {
+  color: white;
+  padding: 8px 16px 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 18px;
+  background: #4ac95a;
+  margin-right: 15px;
+  transition: all .5s;
+}
+
+.whatspp-plugin:hover span {
+  background: #32b844;
+  transition: all .5s;
+}
+
+.whatspp-plugin i {
+  background: #ffffff;
+  font-size: 50px;
+  color: #4dc95c;
+  padding: 4px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 0px;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -13,6 +48,24 @@
 @media (max-width: 770px){
   .custom-btn {
     text-align: center;
+  }
+
+  .whatspp-plugin {
+    right: 13px;
+    bottom: 7px;
+  }
+  
+  .whatspp-plugin i {
+    font-size: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 31px;
+    border-bottom-left-radius: 0;
+  }
+
+  .whatspp-plugin span {
+    font-size: 16px;
+    margin-right: 8px;
   }
 }
 
