@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class AllVideoService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'videos/videos.php'
   constructor(
     private http:HttpClient

@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+@media (max-width: 770px) {
+  body{
+      zoom: .9;
+  }
+}
 .whatspp-plugin {
   position: fixed;
   right: 25px;
@@ -1192,8 +1198,11 @@ blockquote:after,
   background-color: #fff;
 }
 .entry-single .post-content .title {
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: blod;
+}
+::ng-deep .entry-single .post-content .title p{
+  line-height: 20px;
 }
 .entry-single .post-content blockquote {
   position: relative;
@@ -3125,7 +3134,7 @@ blockquote:after,
 }
 @media (min-width: 992px) {
   .section-padding-140 {
-    padding: 100px 0;
+    padding: 100px 0 0px;
   }
 }
 

@@ -32,4 +32,19 @@ export class NoticiasComponent implements OnInit {
     return this._FechaLetras.transform(fecha);
   }
 
+  recortarDescripcion(descripcion: string, maxLength: number): string {
+    const plainText = this.stripHtmlTags(descripcion);
+    if (plainText.length <= maxLength) {
+      return plainText;
+    } else {
+      return plainText.slice(0, maxLength) + '...';
+    }
+  }
+
+  stripHtmlTags(html: string): string {
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    return div.textContent || div.innerText || '';
+  }
+  
 }

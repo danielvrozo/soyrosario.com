@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: 'root'
 })
 export class AllNoticiasService {
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'noticias/noticias.php'
   constructor(
     private http:HttpClient

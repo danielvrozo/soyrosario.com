@@ -25,13 +25,13 @@
                     <div class="post-item">
                         <div class="post-thumb">
                             <a [routerLink]="['/gobiernos/gobierno/' + item.id]">
-                                <img class="w-100" src="https://soyrosario.com.co/soyrosario/uploads/{{ item.imagen_url }}" alt="thumb">
+                                <img class="w-100" src="https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/{{ item.imagen_url }}" alt="thumb">
                             </a>
                         </div>
                         <div class="post-content">
-                            <h6 class="title"><a [routerLink]="['/gobiernos/gobierno/' + item.id]" [innerHTML]="item.titulo | decodeHtml">  </a></h6>
+                            <h6 class="title"><a [routerLink]="['/gobiernos/gobierno/' + item.id]">{{recortarDescripcion(item.titulo, 400)}} </a></h6>
                             
-                            <p [innerHTML]="(item.descripcion | slice:0:320) + (item.descripcion.length > 320 ? '...' : '' | decodeHtml)"></p>
+                            <p class="mb-0"> {{recortarDescripcion(item.descripcion, 320)}} </p>
                             <a [routerLink]="['/gobiernos/gobierno/' + item.id]" class="custom-btn custom-btn-sm pull-left">Ver gobierno</a>
                         </div>
                     </div>

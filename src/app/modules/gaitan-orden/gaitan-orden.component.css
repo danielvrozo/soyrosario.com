@@ -1,0 +1,115 @@
+.page-header {
+    background-image: url(../../../assets/images/desings/portada_rosario.jpg);
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -280px;
+}
+
+.page-header .overlay {
+    padding: 180px 0;
+    background-color: rgb(6 6 6 / 38%);
+}
+
+.page-header .overlay .page-header-content {
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-header .overlay .page-header-content h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+::ng-deep .page-header .overlay .page-header-content h2  p{
+    
+}
+  
+.page-header .overlay .page-header-content .breadcrumb {
+    background-color: transparent;
+}
+
+.post-thumb img {
+    height: 280px;
+    object-fit: cover;
+}
+
+::ng-deep .header {
+    position: inherit;
+}
+
+
+#module-generate-img h3 {
+    color: #6b429a;
+    font-weight: bold;
+}
+
+#module-generate-img h3 b{
+    color: #ff8f12;
+}
+
+.download-img-module{
+    background: #6b429a;
+    color: white;
+    font-weight: bold;
+    padding: 8px 22px;
+    border-radius: 28px;
+    font-size: 19px;
+    transition: all .5s;
+}
+
+.download-img-module:hover{
+    background: #441f6d;
+    transition: all .5s;
+}
+
+.link-download-module{
+    margin: 25px 0px 10px;
+}
+
+@media (max-width: 1600px) {
+    .page-header {
+        background-position-y: inherit;
+    }
+}
+
+@media (max-width: 770px) {
+    .page-header .overlay {
+        padding: 60px 0;
+        background-color: rgb(6 6 6 / 38%);
+    }
+
+    .page-header .overlay .page-header-content h2 {
+        font-size: 18px;
+    }
+
+    .page-header {
+        background-position-y: inherit;
+    }
+
+    .canva-module-img{
+        width: 80%;
+    }
+
+    .section-padding-140 {
+        padding: 30px 0;
+    }
+
+    #module-generate-visualize{
+        order: 2;
+    }
+
+    #module-generate-img{
+        order: 1;
+    }
+
+    .post-item .post-content {
+        padding: 10px 25px 25px;
+    }
+}
+    

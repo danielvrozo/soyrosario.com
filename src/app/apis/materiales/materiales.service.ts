@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MaterialesService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'materiales/materiales.php?id=1'
   constructor(
     private http:HttpClient

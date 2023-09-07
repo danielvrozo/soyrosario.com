@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RedesAllService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'redes/redes.php'
   constructor(
     private http:HttpClient

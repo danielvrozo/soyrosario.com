@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class BannerGetService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'banner/banner.php'
   constructor(
     private http:HttpClient

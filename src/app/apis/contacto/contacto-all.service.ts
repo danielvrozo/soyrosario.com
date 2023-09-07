@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactoAllService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'contacto/contacto.php'
   constructor(
     private http:HttpClient

@@ -35,6 +35,7 @@ import { LoginComponent } from './modules/admin/login/login.component';
 import { EditarMaterialesComponent } from './modules/admin/materiales-admin/crud/editar-materiales/editar-materiales.component';
 import { MaterialesAdminComponent } from './modules/admin/materiales-admin/materiales-admin.component';
 import { MaterialesComponent } from './modules/materiales/materiales.component';
+import { GaitanOrdenComponent } from './modules/gaitan-orden/gaitan-orden.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'noticias', component: NoticiasComponent },
   { path: 'contactenos', component:ContactComponent },
   { path: 'material-de-campaña', component:MaterialesComponent },
+  { path: 'recursos', component: GaitanOrdenComponent },
   { path: 'noticias/noticia/:id', component: NoticiaGetComponent },
   { path: 'gobiernos', component: GobiernoComponent },
   { path: 'gobiernos/gobierno/:id', component: GobiernoGetComponent },

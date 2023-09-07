@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GaleriaAllService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'galeria/galeria.php'
   constructor(
     private http:HttpClient

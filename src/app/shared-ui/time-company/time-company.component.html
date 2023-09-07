@@ -1,27 +1,29 @@
-<section class="election-campaign-section">
-    <div class="section-overlay section-padding-140">
-        <div class="section-heading">
-            <h6>En poco tiempo</h6>
-            <h2 class="fw-bold">¡Haremos historia!</h2>
-        </div>
-        <div class="section-wrapper">
-            <div class="campaign-countdown">
-                <ul id="" class="countdown">
-
-                    <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number hours">{{ months  }}</span><p class="count-text">Meses</p></div></li>
-                    
-                    <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number hours">{{ days  }}</span><p class="count-text">Días</p></div></li>
-                    
-                    <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number minutes">{{ hours }}</span><p class="count-text">Horas</p></div></li>
-                    
-                    <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number seconds">{{ minutes }}</span><p class="count-text">Minutos</p></div></li>
-
-                    <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number seconds">{{ seconds }}</span><p class="count-text">Segundos</p></div></li>
-                </ul>
+<div class="section-padding-140" id="time-company">
+    <section class="election-campaign-section">
+        <div class="section-overlay ">
+            <div class="section-heading">
+                <h6>En poco tiempo</h6>
+                <h2 class="fw-bold">¡Haremos historia!</h2>
             </div>
-            <div class="col-md-12 text-center">
-                <a href="#" class="custom-btn">Conocer nuestro plan de Gobierno</a>
+            <div class="section-wrapper">
+                <div class="campaign-countdown">
+                    <ul id="" class="countdown">
+    
+                        <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number hours">{{ months  }}</span><p class="count-text">Meses</p></div></li>
+                        
+                        <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number hours">{{ days  }}</span><p class="count-text">Días</p></div></li>
+                        
+                        <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number minutes">{{ hours }}</span><p class="count-text">Horas</p></div></li>
+                        
+                        <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number seconds">{{ minutes }}</span><p class="count-text">Minutos</p></div></li>
+    
+                        <li class="countdown-item"><div class="countdown-item-inner"><span class="count-number seconds">{{ seconds }}</span><p class="count-text">Segundos</p></div></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a [routerLink]="['/gobiernos']" class="custom-btn">Conocer nuestro plan de Gobierno</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>	
+    </section>	
+</div>

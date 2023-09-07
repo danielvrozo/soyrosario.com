@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MeGetService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'me/me.php'
   constructor(
     private http:HttpClient

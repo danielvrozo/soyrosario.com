@@ -39,8 +39,8 @@ export class GobiernoGetComponent implements OnInit {
       this._ApiAllGobierno.ALL_GET_GOBIERNO('?id='+params['id']).subscribe((data) => {
         this.noticia = data.body.content;
         this.titulo = data.body.content[0].titulo;
-        this.imagen = "https://soyrosario.com.co/soyrosario/uploads/"+data.body.content[0].imagen_url;
-        this.pdf = "https://soyrosario.com.co/soyrosario/uploads/"+data.body.content[0].pdf_url;
+        this.imagen = "https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/"+data.body.content[0].imagen_url;
+        this.pdf = "https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/"+data.body.content[0].pdf_url;
         this.descripcion = data.body.content[0].descripcion;
         this.fecha = data.body.content[0].fecha;
         this.url_original = data.body.content[0].link_url;

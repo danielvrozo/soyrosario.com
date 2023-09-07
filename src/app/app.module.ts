@@ -59,6 +59,7 @@ import { LoginComponent } from './modules/admin/login/login.component';
 import { EditarMaterialesComponent } from './modules/admin/materiales-admin/crud/editar-materiales/editar-materiales.component';
 import { MaterialesAdminComponent } from './modules/admin/materiales-admin/materiales-admin.component';
 import { MaterialesComponent } from './modules/materiales/materiales.component';
+import { GaitanOrdenComponent } from './modules/gaitan-orden/gaitan-orden.component';
 
 @NgModule({
   declarations: [
@@ -113,7 +114,8 @@ import { MaterialesComponent } from './modules/materiales/materiales.component';
 
     MaterialesAdminComponent,
     EditarMaterialesComponent,
-    MaterialesComponent
+    MaterialesComponent,
+    GaitanOrdenComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,17 @@
+#time-company{
+  background: #f2f2f2;
+}
+
 .election-campaign-section {
-    background-image: url(../../../assets/images/desings/banner-2.png);
+    background-image: url(../../../assets/images/desings/portada_rosario.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .section-overlay {
-    background-color: rgba(218, 68, 138, 0.16)
+    background-color: rgba(218, 68, 138, 0.16);
+    padding: 140px 0px;
   }
 
   .countdown .countdown-item {

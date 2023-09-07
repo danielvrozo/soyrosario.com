@@ -166,7 +166,7 @@
     }
 
     .img-mobile img {
-        width: 380px;
+        width: 500px;
     }
 }
 
@@ -211,7 +211,7 @@
 }
 
 @media (max-width: 770px) {
-    
+
     .banner.banner-1 {
         height: 100vh;
         background-image: 

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class BannerUpService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'banner/banner.php?id=1'
   constructor(
     private http:HttpClient

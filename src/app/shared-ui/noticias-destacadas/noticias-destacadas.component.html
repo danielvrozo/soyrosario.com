@@ -2,19 +2,19 @@
     <div class="container">
         <div class="section-heading">
             <h2>Últimas noticias</h2>
-            <p>#SoyRosario</p>
+            <p>#RosarioAlcaldesa</p>
         </div>
         <div class="section-wrapper row justify-content-center">
             <div class="col-lg-4 col-sm-6 mb-4" *ngFor="let item of noticias">
                 <div class="post-item">
                     <div class="post-thumb">
                         <a [routerLink]="['/noticias/noticia/' + item.id]">
-                            <img class="w-100" src="https://soyrosario.com.co/soyrosario/uploads/{{ item.imagen_url }}" alt="thumb">
+                            <img class="w-100" src="https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/{{ item.imagen_url }}" alt="thumb">
                         </a>
                     </div>
                     <div class="post-content">
-                        <h6 class="title"><a [routerLink]="['/noticias/noticia/' + item.id]" [innerHTML]="item.titulo | decodeHtml"> </a></h6>
-                        <p class="heigth-info-noticia" [innerHTML]="(item.descripcion | slice:0:320) + (item.descripcion.length > 320 ? '...' : '' | decodeHtml)"></p>
+                        <h6 class="title"><a [routerLink]="['/noticias/noticia/' + item.id]"> {{recortarDescripcion(item.titulo, 400)}} </a></h6>
+                        <p class="heigth-info-noticia"> {{recortarDescripcion(item.descripcion, 320)}} </p>
                         <a [routerLink]="['/noticias/noticia/' + item.id]" class="custom-btn custom-btn-sm pull-left">Ver noticia</a>
                     </div>
                 </div>

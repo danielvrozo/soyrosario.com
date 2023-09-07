@@ -32,8 +32,8 @@ export class BiografiaComponent implements OnInit {
   MostrarBiografia(){
     this._ApiBiografia.ALL_GET('?id=1').subscribe((data) => {
       this.titulo = data.body.content[0].titulo;
-      this.imagen = "https://soyrosario.com.co/soyrosario/uploads/"+data.body.content[0].imagen_url;
-      this.pdf = "https://soyrosario.com.co/soyrosario/uploads/"+data.body.content[0].pdf_url;
+      this.imagen = "https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/"+data.body.content[0].imagen_url;
+      this.pdf = "https://rosarioalcaldesa.com/rosarioalcaldesa/uploads/"+data.body.content[0].pdf_url;
       this.descripcion = data.body.content[0].descripcion;
       this.fecha = data.body.content[0].fecha;
     });

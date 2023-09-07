@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class BiografiaUpService {
 
-  domain = 'https://soyrosario.com.co/soyrosario/api/';
+  domain = 'https://rosarioalcaldesa.com/rosarioalcaldesa/api/';
   endpoint = 'biografia/biografia.php?id=1'
   constructor(
     private http:HttpClient

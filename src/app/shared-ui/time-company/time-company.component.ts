@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeCompanyComponent implements OnInit {
 
-  deadlineDate = '2023-10-04T23:59:59';
+  deadlineDate = '2023-10-29T16:00:00';
   months: any;
   days: any;
   hours: any;
