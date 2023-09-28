@@ -1,43 +1,47 @@
 
-<app-header></app-header>
-<section class="banner banner-1 position-relative" style='background-image: url({{image_bg}}), linear-gradient(rgb(99 59 143 / 0%) 0%, rgb(99 59 143 / 6%) 55%, rgb(99 59 143 / 38%) 100%);'>
-    <div class="banner-content">
-        <div class="container">
-            <div class="banner-content-text px-3 px-md-0" *ngIf="show">
-                <h1 class="text-capitalize" >
-                    {{ recortarDescripcion(body[0]['titulo'], 300) }}
-                </h1>
-                <h6 class="">  
-                    {{ recortarDescripcion(body[0]['descripcion'], 300) }}
-                </h6>
-                <a [routerLink]="['/quien-soy']" class="custom-btn">¿Quién Soy? ¡Conóceme!</a>
-            </div>   
-            
-        </div>    
+<div id="home">
+    <app-header></app-header>
+    <div class="bg-campana">
+        <section class="banner banner-1 position-relative">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="banner-content-text px-3 px-md-0" *ngIf="show">
+                        <h1 class="text-capitalize" >
+                            {{ recortarDescripcion(body[0]['titulo'], 300) }}
+                        </h1>
+                        <h6 class="">  
+                            {{ recortarDescripcion(body[0]['descripcion'], 300) }}
+                        </h6>
+                        <a [routerLink]="['/quien-soy']" class="custom-btn">¿Quién Soy? ¡Conóceme!</a>
+                    </div>   
+                    
+                </div>    
+            </div>
+        
+            <!-- <div class="d-block d-md-none img-mobile">
+                <img src="{{image_bg_responsive}}" alt="" class="d-block d-md-none">
+            </div> -->
+        
+        </section>
     </div>
 
-    <div class="d-block d-md-none img-mobile">
-        <img src="{{image_bg_responsive}}" alt="" class="d-block d-md-none">
+    <app-about-wg></app-about-wg>
+
+    <div *ngIf="detectScreenMode_controller">
+        <app-frames-redes></app-frames-redes>
+        <app-programs-gobierno></app-programs-gobierno>
+        <app-time-company></app-time-company>
+        <app-noticias-destacadas></app-noticias-destacadas>
     </div>
 
-</section>
+    <div *ngIf="!detectScreenMode_controller">
+        <app-programs-gobierno></app-programs-gobierno>
+        <app-time-company></app-time-company>
+        <app-noticias-destacadas></app-noticias-destacadas>
+        <app-frames-redes></app-frames-redes>
+    </div>
 
-<app-about-wg></app-about-wg>
 
-<div *ngIf="detectScreenMode_controller">
-    <app-frames-redes></app-frames-redes>
-    <app-programs-gobierno></app-programs-gobierno>
-    <app-time-company></app-time-company>
-    <app-noticias-destacadas></app-noticias-destacadas>
+
+    <app-footer></app-footer>
 </div>
-
-<div *ngIf="!detectScreenMode_controller">
-    <app-programs-gobierno></app-programs-gobierno>
-    <app-time-company></app-time-company>
-    <app-noticias-destacadas></app-noticias-destacadas>
-    <app-frames-redes></app-frames-redes>
-</div>
-
-
-
-<app-footer></app-footer>
